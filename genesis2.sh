@@ -1,10 +1,9 @@
 #!/bin/bash
 echo "Clearing blockchain"
 
-rm -rf ./data2/geth
-rm -rf ./data2/history
+rm -rf ./testnode2
 
-echo "Clearing blockchain"
+echo "Initializing genesis block"
 
 geth --identity "testnode2"  --datadir ./testnode2/data/  --networkid 81238 init ./genesis.json
 
